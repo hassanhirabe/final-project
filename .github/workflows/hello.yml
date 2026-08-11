@@ -1,19 +1,17 @@
- name: Hello hassan
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+
+        name: student project
+
+on: push
 
 jobs:
-  hello:
+  say-hello:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
+      - name: Get the code
         uses: actions/checkout@v4
 
-      - name: Run project check
-        run: echo "Student Study Planner workflow is working!"
+      - name: Greet and count files
+        env:
+          STUDENT_NAME: ${{ vars.STUDENT_NAME }}
+        run: |
+           echo "Student Study Planner workflow is working!"
