@@ -24,6 +24,4 @@ Open index.html in your browser.
 In progress — Git & GitHub Bootcamp capstone project.
 
 ## Author
-
-YOUR_NAME
 Hassan Ali
