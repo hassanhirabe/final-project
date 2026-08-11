@@ -1,4 +1,4 @@
-name: Hello hassan
+ name: Hello hassan
 
 on:
   push:
