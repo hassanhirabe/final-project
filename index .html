@@ -18,5 +18,22 @@
       <li>Review lessons</li>
       <li>Java sript </li>
     </ul>
+    <script>
+function calculateProgress(completedTasks, totalTasks) {
+    if (totalTasks === 0) {
+        return 0;
+    }
+
+    return Math.round((completedTasks / totalTasks) * 100);
+}
+
+// Example
+const completedTasks = 3;
+const totalTasks = 5;
+
+const progress = calculateProgress(completedTasks, totalTasks);
+
+console.log("Study Progress: " + progress + "%");
+</script>
   </body>
 </html>
